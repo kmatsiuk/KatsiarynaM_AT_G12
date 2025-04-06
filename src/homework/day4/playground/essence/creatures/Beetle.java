@@ -1,6 +1,6 @@
 package homework.day4.playground.essence.creatures;
 
-public abstract class Beetle extends Insect {
+public abstract class Beetle extends Insect implements Crawlable {
 
     public void nest (Carrot home) {
         if (this.getMass() < home.getMass()) {
