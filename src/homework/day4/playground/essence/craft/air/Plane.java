@@ -1,4 +1,4 @@
 package homework.day4.playground.essence.craft.air;
 
-public class Plane {
+public class Plane extends Aircraft {
 }
