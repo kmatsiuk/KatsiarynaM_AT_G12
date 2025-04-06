@@ -1,4 +1,4 @@
 package homework.day4.playground.essence.creatures;
 
-public class Fly {
+public class Fly extends Insect {
 }
