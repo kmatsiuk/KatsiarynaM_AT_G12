@@ -7,6 +7,6 @@ public class Fly extends Insect implements Flyable {
     }
 
     public void fly(String direction) {
-        System.out.printf("I am %s my name is %s and I am flying to %s", this.getClass().getSimpleName(), this.name, direction);
+        System.out.printf("I am %s my name is %s and I am flying to %s\n", this.getClass().getSimpleName(), this.name, direction);
     }
 }

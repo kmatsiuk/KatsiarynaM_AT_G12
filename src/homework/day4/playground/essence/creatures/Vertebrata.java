@@ -6,6 +6,6 @@ public abstract class Vertebrata extends Animal {
     }
 
     public void eat (Insect food) {
-        System.out.printf("I am %s and I am eating %s", name, food.getName()); //food get name потому что Plant name в другом классе?
+        System.out.printf("I am %s and I am eating %s\n", name, food.getName()); //food get name потому что Plant name в другом классе?
     }
 }
