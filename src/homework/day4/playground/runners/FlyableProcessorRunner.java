@@ -37,8 +37,8 @@ public class FlyableProcessorRunner {
         processor1.runFlyable(aircraftCopter);
         processor1.runFlyable(aircraftPlane);
         processor1.runFlyable(aircraftRocket);
-        /*processor1.runFlyable(insectFly);
-        processor1.runFlyable(insectMosquito);*/ //не понятно
+        processor1.runFlyable((Flyable)insectFly);
+        processor1.runFlyable((Flyable)insectMosquito); //не понятно
         processor1.runFlyable(aCopter);
         processor1.runFlyable(aPlane);
         processor1.runFlyable(aFly);
