@@ -1,4 +1,4 @@
-package cycletask;
+package homework.day1.cycletask;
 
 public class WhileTask {
 

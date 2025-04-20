@@ -3,7 +3,7 @@ package homework.day4.playground.utils;
 import java.util.Random;
 
 public class DirectionGenerator {
-    public static String generateDirection() { //ругаеца
+    public static String generateDirection() {
         Random random = new Random();
         int a = random.nextInt(1, 40) ;
         if (a >= 1 && a <= 9) {
