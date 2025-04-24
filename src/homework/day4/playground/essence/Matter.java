@@ -1,10 +1,16 @@
 package homework.day4.playground.essence;
 
-public class Matter {
+import java.io.Serializable;
+
+public class Matter implements Serializable {
     protected int mass;
 
     public Matter(int mass) {
         this.mass = mass;
+    }
+
+    public Matter() {
+
     }
 
     public int getMass() {

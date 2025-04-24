@@ -5,6 +5,7 @@ public class VolumeGenerator {
     public static int generateVolume() {
         Random random = new Random();
         int vol;
+        Object pourable = null; //Добавила чтобы не мешало следующей домашке
         if (pourable.getClass().getSimpleName().equals("Water")) {
             vol = random.nextInt(50, 100);
         } else {

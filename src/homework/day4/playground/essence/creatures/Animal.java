@@ -1,12 +1,18 @@
 package homework.day4.playground.essence.creatures;
 import homework.day4.playground.essence.Matter;
 
-public abstract class Animal extends Matter {
+import java.io.Serializable;
+
+public abstract class Animal extends Matter implements Serializable {
     protected String name;
 
     public Animal(int mass, String name) {
         super(mass);
         this.name = name;
+    }
+
+    public Animal() {
+        super();
     }
 
     public String getName() {
