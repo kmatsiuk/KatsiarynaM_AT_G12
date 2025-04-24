@@ -1,7 +1,13 @@
 package homework.day4.playground.essence.creatures;
 
-public abstract class Insect extends Animal {
+import java.io.Serializable;
+
+public abstract class Insect extends Animal implements Serializable {
     public Insect(int mass, String name) {
         super(mass, name);
+    }
+
+    public Insect() {
+        super();
     }
 }

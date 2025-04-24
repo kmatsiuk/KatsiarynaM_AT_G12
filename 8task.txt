@@ -1,0 +1,1 @@
+Fly{name='Anzhella', mass=13}Fly name= Anzhella', mass 13Fly name= Anzhella, mass 13Fly name Anzhella, mass 13
