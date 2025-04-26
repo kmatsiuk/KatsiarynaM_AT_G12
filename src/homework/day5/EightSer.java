@@ -10,15 +10,13 @@ public class EightSer implements Serializable {
     public static void main(String[] args) {
 
         try {
-            FileInputStream fis = new FileInputStream("muha.tmp");
+            FileInputStream fis = new FileInputStream("muha.tmp"); //переписать на try с ресурсами
             ObjectInputStream ois = new ObjectInputStream(fis);
             Fly muha = (Fly) ois.readObject();
             ois.close();
             System.out.println(muha.toString());
-        } catch (IOException e) {
+        } catch (IOException | ClassNotFoundException e) {
             System.out.println("Ошибка при де-сериализации");
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e); //zachem
         }
         //пришлось добавлять пустые конструкторы во всех родителей и всем писать Serializable
         try (BufferedWriter writes = new BufferedWriter(new FileWriter("8task.txt", true))) {
