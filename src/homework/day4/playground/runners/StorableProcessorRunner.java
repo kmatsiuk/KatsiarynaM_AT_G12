@@ -20,8 +20,8 @@ public class StorableProcessorRunner {
         Container containerCan = new Can(54, "Big");
         Matter matterCan = new Can(8, "Old");
 
-        /*processor5.runStorable(bottle);
-        processor5.runStorable(storableCan);
+        processor5.runStorable(bottle, new Diesel(4));
+/*        processor5.runStorable(storableCan);
         processor5.runStorable(storableBottle);
         processor5.runStorable((Storable) containerCan);
         processor5.runStorable((Storable) containerBottle);
@@ -38,7 +38,7 @@ public class StorableProcessorRunner {
         Water water = new Water(34); //какие-то конструкторы идея сама насоздавала я хз
         Pourable pourableWater = new Water(37);
 
-        /*processor5.runStorable((Storable) petrol);
+/*        processor5.runStorable((Storable) petrol);
         processor5.runStorable((Storable) pourablePetrol);
         processor5.runStorable((Storable) powerableDiesel);
         processor5.runStorable((Storable) pourableDiesel);

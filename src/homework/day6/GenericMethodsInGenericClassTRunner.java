@@ -18,7 +18,7 @@ public class GenericMethodsInGenericClassTRunner {
 
         intObj.genericMethodOneGenArg(4);
         intObj.genericMethodHalfGenArgs(54, "line");
-        String result2 = intObj.genericMethodTwoGenArgs(15, 67); //почему нельзя Int result2
+        String result2 = intObj.genericMethodTwoGenArgs(15, 67); //почему нельзя Int result2 - public String метод
         System.out.println(result2);
 
         doubleObj.genericMethodOneGenArg(43.3);

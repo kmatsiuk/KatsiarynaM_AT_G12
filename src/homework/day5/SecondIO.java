@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class SecondIO {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String incoming = scanner.nextLine();
 
@@ -16,5 +16,17 @@ public class SecondIO {
         } catch (IOException e) {
             System.out.println("Ошибка при записи");
         }
+/*        BufferedWriter create = null;
+        try {
+            create = new BufferedWriter(new FileWriter("domashka.txt", true));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } finally {
+            try {
+                create.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }*/
     }
 }
