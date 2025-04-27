@@ -13,7 +13,7 @@ public class TreePresent {
         long t0 = System.currentTimeMillis();
 
         for (int i = 0; i < 1_000_000; i++) {
-            myList1.add("Yo" +i);
+            myList1.add("New" +i);
         }
 
         System.out.println(System.currentTimeMillis() - t0);
@@ -21,7 +21,7 @@ public class TreePresent {
         t0 = System.currentTimeMillis();
 
         for (int i = 0; i < 1_000_000; i++) {
-            myList2.add("Yo" +i);
+            myList2.add("New" +i);
         }
 
         System.out.println(System.currentTimeMillis() - t0);
