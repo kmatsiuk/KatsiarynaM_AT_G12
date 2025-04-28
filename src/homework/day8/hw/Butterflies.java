@@ -33,6 +33,6 @@ public class Butterflies {
         for (String bug : butterflies) {
             System.out.println(bug);
         }
-        
+
     }
 }
