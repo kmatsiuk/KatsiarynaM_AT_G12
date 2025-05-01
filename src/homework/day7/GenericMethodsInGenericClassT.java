@@ -1,4 +1,4 @@
-package homework.day6;
+package homework.day7;
 
 public class GenericMethodsInGenericClassT<T> {
     void genericMethodOneGenArg(T t) { //может быть любая буква?

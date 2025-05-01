@@ -1,4 +1,4 @@
-package homework.day5;
+package homework.day6;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

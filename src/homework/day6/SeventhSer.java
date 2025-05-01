@@ -1,4 +1,4 @@
-package homework.day5;
+package homework.day6;
 
 import homework.day4.playground.essence.creatures.Fly;
 import java.io.FileOutputStream;

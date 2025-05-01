@@ -1,10 +1,10 @@
-package homework.day5;
+package homework.day6;
 
 import homework.day4.playground.essence.creatures.Fly;
 
 import java.io.*;
 
-import static homework.day5.SeventhSer.muha;
+import static homework.day6.SeventhSer.muha;
 
 public class EightSer implements Serializable {
     public static void main(String[] args) {
