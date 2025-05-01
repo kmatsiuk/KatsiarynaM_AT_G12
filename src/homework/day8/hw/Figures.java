@@ -12,10 +12,14 @@ public class Figures {
 
         String result = "";
         try (BufferedWriter writes = new BufferedWriter(new FileWriter("for.txt"))) {
-            for (String figure : figures) {
-                result = figure + " - ";
+            for (int i = 0; i < figures.size(); i++) {
+                if (i < figures.size() - 1) {
+                    result = figures.get(i) + " - ";
+                } else {
+                    result = figures.get(i);
+                }
                 System.out.print(result);
-                writes.write(result); //последнее тире очевидно не убирается
+                writes.write(result);
             }
         } catch (IOException e) {
             System.out.println("Ошибка при записи в файл");

@@ -26,6 +26,7 @@ public class NamesPresent {
         System.out.println();
 
         names.remove("Оля");
+        //names.removeAll(List.of("Оля", "Оля"));
         names.remove(3);
 
         for (String name : names) {

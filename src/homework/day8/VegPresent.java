@@ -21,7 +21,7 @@ public class VegPresent {
 
         for (String veg : vegetables) {
             if (veg.contains("а")) {
-            count++; //неоч
+                count++; //неоч
             }
         }
         System.out.println(count);
