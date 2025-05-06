@@ -21,5 +21,19 @@ public class Birds {
             }
         }
         System.out.println(birdsWithVowels);
+
+        // Проитерировать список по индексу и отпечатать слова в консоль через пробел
+        for (int i = 0; i < birds.size(); i++) {
+            System.out.print(birds.get(i) + " ");
+        }
+        System.out.println();
+
+        //Заменить 3-й элемент списка на Синица
+        birds.set(3, "Синица");
+
+        //Проитерировать список через for-each и отпечатать слова в консоль через пробел
+        for (String bird : birds) {
+            System.out.print(bird + " ");
+        }
     }
 }
