@@ -1,6 +1,5 @@
 package classwork.day9;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,19 +17,24 @@ public class TaskOne {
 
         System.out.println(list.stream().skip(4).findFirst().orElse("bugagashechka"));
 
-        List<String> result = new ArrayList<>();
-        long limit = 2;
-        long toSkip = 2;
-        for (String s : list) {
-            if (toSkip > 0) {
-                toSkip--;
-                continue;
-            }
-            if (limit-- == 0) break;
-            result.add(s);
-        }
-        System.out.println(result);
-
         System.out.println(list.stream().filter(x -> x.contains("м")).distinct().toList());
+
+        //03.05.2025
+        System.out.println(list.stream().anyMatch(match -> match.equals("мама")));
+
+        System.out.println(list.stream().allMatch(cont -> cont.contains("м")));
+
+        System.out.println(list.stream().map(adding -> adding+"М").toList());
+
+        System.out.println(list.stream().flatMap(aCont -> Arrays.stream(aCont.split("а"))).filter(
+                x -> !x.equals("")).toList());
+
+        System.out.println(list.stream().sorted().toList());
+
+        System.out.println(list.stream().sorted((cont1, cont2) -> -cont1.compareTo(cont2)).toList());
+
+        System.out.println(list.stream().flatMap(x -> Arrays.stream(x.split("")))
+                .peek(System.out::print)
+                .max(String::compareTo));
     }
 }
