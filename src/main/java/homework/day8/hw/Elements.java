@@ -14,6 +14,7 @@ public class Elements {
         elems.add("Breadcrumb");
 
         for (String elem : elems) {
+            //Проитерировать список через for-each и отпечатать слова в консоль через пробел
             System.out.print(elem + " ");
         }
         System.out.println();
@@ -24,10 +25,12 @@ public class Elements {
             if (elem.contains(" ") || elem.contains("-")) {
                 a++;
             }
+            //Проитерировать список по индексу и отпечатать слова в консоль через пробел
+            System.out.print(elems.get(i) + " ");
         }
-        System.out.println(a);
-        System.out.print(elems + " ");
         System.out.println();
+        // Посчитать сколько названий элементов состоит более, чем из одного слова и вывести число в консоль
+        System.out.println(a);
 
         elems.add(4, "Spinner");
         elems.remove(2);
