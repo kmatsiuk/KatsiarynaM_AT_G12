@@ -12,6 +12,6 @@ public class RunnerCars {
         //пропустить одно название
         //верхний регистр
         //отпечатать с новой строки
-        cars.stream().distinct().skip(1).map(s -> s.toUpperCase()).peek(System.out::println).toList();
+        cars.stream().distinct().skip(1).map(s -> s.toUpperCase()).forEach(System.out::println);
     }
 }
